@@ -1,8 +1,8 @@
-from rest_framework import serializers
 from news.models import News
+from rest_framework import serializers
 
 
-class NewsSerializer(serializers.Serializer):
+class NewsSerializer(serializers.ModelSerializer):
 
     pk = serializers.IntegerField(read_only=True)
     author_name = serializers.CharField(max_length=150)
