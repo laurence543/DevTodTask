@@ -16,3 +16,7 @@ class NewsSerializer(serializers.ModelSerializer):
         instance.content = validated_data.get('description', instance.content)
         instance.save()
         return instance
+
+    class Meta:
+        model = News
+        fields = ('pk', 'author_name', 'content', 'created')
