@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="News board about everything">
+  <meta name="author" content="Ivan">
+  <title>{% block title %}{% endblock title  %}</title>
+
+  <!-- Custom styles for this template -->
+  {% block additional_css %}{% endblock additional_css %}
+</head>
+<body class="text-center">
+  <header>
+    {% include 'header.html' %}
+  </header>
+
+  <main role="main">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer class="container">
+    {% include 'footer.html' %}
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous">
+  </script>
+{% block additional_js %}{% endblock additional_js %}
+</body>
+</html>
