@@ -25,7 +25,7 @@ SECRET_KEY = 'ki0643d4trh8sl051&5!_zznpr3&t+p9=tm-0h58#k57hq^7@g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stormy-sea-28069.herokuapp.com',]
+ALLOWED_HOSTS = ['stormy-sea-28069.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
